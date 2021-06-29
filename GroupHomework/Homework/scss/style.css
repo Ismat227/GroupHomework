@@ -1,0 +1,623 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.heading h1 {
+  display: inline-block;
+  border-bottom: 3px solid black;
+}
+
+body header {
+  background-color: navy;
+  width: 100%;
+}
+
+body header .networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+body header .networks .site-name {
+  width: 250px;
+}
+
+body header .networks .site-name h1 {
+  color: green;
+}
+
+body header .networks h1 {
+  color: yellow;
+  padding: 10px 0;
+}
+
+body header .networks .social-networks {
+  padding: 10px 0;
+}
+
+body header .networks .social-networks nav ul.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .networks .social-networks nav ul.social-list li {
+  padding: 0 10px;
+}
+
+body header .networks .social-networks nav ul.social-list li a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  color: black;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+body header .networks .social-networks nav ul.social-list li a:hover {
+  background-color: black;
+  color: white;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 0 20px 2px white;
+          box-shadow: 0 0 20px 2px white;
+}
+
+body header .networks .social-networks nav ul.social-list li:last-of-type {
+  padding-right: 0;
+}
+
+body header .networks .social-networks p {
+  text-align: center;
+  color: white;
+}
+
+body header section {
+  background-color: #48dbfb;
+}
+
+body header section .menu-and-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header section .menu-and-logo .nav-brand {
+  height: 75px;
+  margin: 15px 0;
+}
+
+body header section .menu-and-logo .nav-brand a img {
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+body header section .menu-and-logo .nav-brand a:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body header section .menu-and-logo .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header section .menu-and-logo .menu nav #bar-logo {
+  display: none;
+}
+
+body header section .menu-and-logo .menu nav ul.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header section .menu-and-logo .menu nav ul.menu-list li.menu-list-item {
+  margin: 10px 5px;
+}
+
+body header section .menu-and-logo .menu nav ul.menu-list li.menu-list-item a {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 15px;
+  border-bottom: 3px solid transparent;
+}
+
+body header section .menu-and-logo .menu nav ul.menu-list li.menu-list-item a:hover {
+  color: navy;
+  border-color: white;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header section .menu-and-logo .menu nav ul.menu-list li.menu-list-item:last-of-type {
+  margin-right: 0;
+}
+
+body header section .menu-and-logo .menu nav ul.menu-list li.menu-list-item:last-of-type a {
+  padding-right: 0;
+}
+
+body main section#motorcycles {
+  padding: 100px 0;
+}
+
+body main section#motorcycles .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main section#motorcycles .boxes .box {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border: 2px solid black;
+  width: 300px;
+  margin: 50px 0;
+}
+
+body main section#motorcycles .boxes .box .box-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section#motorcycles .boxes .box .box-header h1 {
+  line-height: 2;
+}
+
+body main section#motorcycles .boxes .box .box-header img {
+  width: 100%;
+  height: 120px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+body main section#motorcycles .boxes .box .box-body {
+  padding: 10px;
+}
+
+body main section#motorcycles .boxes .box .box-body p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+body main section#motorcycles .boxes .box .box-footer {
+  background-color: #dfe4ea;
+}
+
+body main section#motorcycles .boxes .box .box-footer a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: gray;
+  font-weight: 600;
+}
+
+body main section#motorcycles .boxes .box .box-footer a:hover {
+  background-color: black;
+  border-radius: 50rem;
+  color: white;
+}
+
+body main section#motorcycles .boxes .box:hover {
+  border-color: #dfe4ea;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  overflow: hidden;
+}
+
+body main section#motorcycles .boxes .box:hover img {
+  border-radius: 50%;
+}
+
+body main section#drivers {
+  padding: 100px 0;
+}
+
+body main section#drivers .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main section#drivers .boxes .box {
+  background-image: url(../img/Stefan_Bradl.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  padding: 0 20px;
+  width: 300px;
+  margin: 50px 0;
+}
+
+body main section#drivers .boxes .box .box-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+}
+
+body main section#drivers .boxes .box .box-header h1 {
+  line-height: 2;
+}
+
+body main section#drivers .boxes .box .box-header img {
+  width: 100%;
+  height: 200px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+body main section#drivers .boxes .box .box-body {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  padding: 10px;
+  opacity: 0;
+}
+
+body main section#drivers .boxes .box .box-body p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+body main section#drivers .boxes .box .box-footer {
+  background-color: #dfe4ea;
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+body main section#drivers .boxes .box .box-footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50rem;
+  background-color: black;
+  color: white;
+}
+
+body main section#drivers .boxes .box:nth-of-type(2) {
+  background-image: url(../img/Marc.png);
+}
+
+body main section#drivers .boxes .box:nth-of-type(3) {
+  background-image: url(../img/pol.png);
+}
+
+body main section#drivers .boxes .box:hover {
+  background-image: none;
+  border-color: #dfe4ea;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body main section#drivers .boxes .box:hover .box-header {
+  opacity: 1;
+}
+
+body main section#drivers .boxes .box:hover .box-body {
+  opacity: 1;
+}
+
+body main section#drivers .boxes .box:hover .box-footer {
+  opacity: 1;
+}
+
+body main section#drivers .boxes .box:hover .box-footer a:hover {
+  background-color: white;
+  color: black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
+}
+
+body main section#drivers .boxes .box:hover img {
+  opacity: 1;
+}
+
+body footer {
+  background-color: #333;
+  padding: 50px 0;
+}
+
+body footer .responsive-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body footer .responsive-footer .social-networks {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body footer .responsive-footer .social-networks nav ul.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer .responsive-footer .social-networks nav ul.social-list li {
+  padding-right: 10px;
+}
+
+body footer .responsive-footer .social-networks nav ul.social-list li a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  color: black;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+body footer .responsive-footer .social-networks nav ul.social-list li a:hover {
+  background-color: black;
+  color: white;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 0 20px 2px white;
+          box-shadow: 0 0 20px 2px white;
+}
+
+body footer .responsive-footer .social-networks p {
+  text-align: center;
+  color: white;
+  padding: 25px 0;
+}
+
+body footer .responsive-footer ul.menu-list {
+  padding: 25px;
+}
+
+body footer .responsive-footer ul.menu-list h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+body footer .responsive-footer ul.menu-list li {
+  margin: 10px 0;
+}
+
+body footer .responsive-footer ul.menu-list li a {
+  color: rgba(255, 255, 255, 0.623);
+  font-size: 20px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 15px;
+  border-bottom: 3px solid transparent;
+}
+
+body footer .responsive-footer ul.menu-list li a:hover {
+  color: yellow;
+  border-color: white;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  header .networks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .networks h1 {
+    text-align: center;
+  }
+  header section .menu-and-logo .nav-brand {
+    margin-left: 10px !important;
+  }
+  header section .menu-and-logo div#bar-logo {
+    display: block !important;
+    margin-right: 10px;
+  }
+  header section .menu-and-logo div#bar-logo a {
+    font-size: 50px;
+    color: navy;
+  }
+  header section .menu-and-logo .menu-list {
+    display: none !important;
+  }
+  section#motorcycles .boxes,
+  section#drivers .boxes {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  footer .social-networks,
+  footer ul.menu-list {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  section#motorcycles .boxes,
+  section#drivers .boxes {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  footer .social-networks,
+  footer ul.menu-list {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+  section#motorcycles .boxes,
+  section#drivers .boxes {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  section#motorcycles .boxes .box,
+  section#drivers .boxes .box {
+    margin: 50px 0;
+  }
+  footer .social-networks {
+    width: 100%;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  section#motorcycles .box {
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

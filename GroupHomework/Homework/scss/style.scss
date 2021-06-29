@@ -1,0 +1,512 @@
+// @import 'colors';
+@import "reset";
+
+body {
+    header {
+        background-color: navy;
+        width: 100%;
+
+        .networks {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 0;
+
+            .site-name {
+                width: 250px;
+                // padding: 10px 0;
+
+                h1 {
+                    color: green;
+                }
+            }
+
+            h1 {
+                color: yellow;
+                padding: 10px 0;
+            }
+
+            .social-networks {
+                padding: 10px 0;
+                nav {
+                    ul.social-list {
+                        display: flex;
+                        align-items: center;
+
+                        li {
+                            padding: 0 10px;
+
+                            a {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: white;
+                                color: black;
+                                transition: all 0.2s linear;
+                            }
+
+                            a:hover {
+                                background-color: black;
+                                color: white;
+                                transform: scale(1.2);
+                                box-shadow: 0 0 20px 2px white;
+                            }
+                        }
+
+                        li:last-of-type {
+                            padding-right: 0;
+                        }
+                    }
+                }
+
+                p {
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+
+        section {
+            background-color: #48dbfb;
+
+            .menu-and-logo {
+                display: flex;
+                justify-content: space-between;
+
+                .nav-brand {
+                    height: 75px;
+                    margin: 15px 0;
+
+                    a {
+                        img {
+                            height: 100%;
+                            transition: transform 0.2s linear;
+                        }
+                    }
+
+                    a:hover {
+                        img {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+
+                .menu {
+                    display: flex;
+                    align-items: center;
+
+                    nav {
+                        #bar-logo {
+                            display: none;
+                        }
+
+                        ul.menu-list {
+                            display: flex;
+                            justify-content: center;
+
+                            li.menu-list-item {
+                                margin: 10px 5px;
+
+                                a {
+                                    color: white;
+                                    font-weight: 700;
+                                    font-size: 20px;
+                                    transition: all 0.2s linear;
+                                    display: flex;
+                                    padding: 5px 15px;
+                                    border-bottom: 3px solid transparent;
+                                }
+                                a:hover {
+                                    color: navy;
+                                    border-color: white;
+                                    transform: scale(1.2);
+                                    justify-content: center;
+                                }
+                            }
+
+                            li.menu-list-item:last-of-type {
+                                margin-right: 0;
+
+                                a {
+                                    padding-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        section#motorcycles {
+            padding: 100px 0;
+            .boxes {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .box {
+                    transition: all 0.2s linear;
+                    border: 2px solid black;
+                    width: 300px;
+                    margin: 50px 0;
+
+                    .box-header {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        h1 {
+                            line-height: 2;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 120px;
+                            transition: all 0.2s linear;
+                            // border-radius: 50%;
+                        }
+                    }
+                    .box-body {
+                        padding: 10px;
+                        p {
+                            text-align: center;
+                            font-size: 18px;
+                            line-height: 1.3;
+                        }
+                    }
+                    .box-footer {
+                        background-color: #dfe4ea;
+
+                        a {
+                            display: block;
+                            padding: 10px;
+                            text-align: center;
+                            color: gray;
+                            font-weight: 600;
+                        }
+
+                        a:hover {
+                            background-color: black;
+                            border-radius: 50rem;
+                            color: white;
+                        }
+                    }
+                }
+
+                // .box:nth-of-type(2) {
+                //     // margin: 0 50px;
+                // }
+                .box:hover {
+                    border-color: #dfe4ea;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 10px black;
+                    transform: scale(1.1);
+                    overflow: hidden;
+
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        section#drivers {
+            padding: 100px 0;
+            .boxes {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .box {
+                    background-image: url(../img/Stefan_Bradl.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    transition: all 0.5s linear;
+                    overflow: hidden;
+                    padding: 0 20px;
+                    width: 300px;
+                    margin: 50px 0;
+
+                    .box-header {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        opacity: 0;
+
+                        h1 {
+                            line-height: 2;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 200px;
+                            transition: all 1s linear;
+                        }
+                    }
+
+                    .box-body {
+                        transition: all 0.5s linear;
+                        padding: 10px;
+                        opacity: 0;
+
+                        p {
+                            text-align: center;
+                            font-size: 18px;
+                            line-height: 1.3;
+                        }
+                    }
+
+                    .box-footer {
+                        background-color: #dfe4ea;
+                        opacity: 0;
+                        transition: all 0.5s linear;
+
+                        a {
+                            display: flex;
+                            justify-content: center;
+                            padding: 10px;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50rem;
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                }
+
+                .box:nth-of-type(2) {
+                    // margin: 0 50px;
+                    background-image: url(../img/Marc.png);
+                }
+                .box:nth-of-type(3) {
+                    background-image: url(../img/pol.png);
+                }
+
+                .box:hover {
+                    background-image: none;
+                    border-color: #dfe4ea;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 20px black;
+                    transform: scale(1.1);
+
+                    .box-header {
+                        opacity: 1;
+                    }
+
+                    .box-body {
+                        opacity: 1;
+                    }
+                    .box-footer {
+                        opacity: 1;
+
+                        a:hover {
+                            background-color: white;
+                            color: black;
+                            transform: scale(1.2);
+                            box-shadow: 0 0 20px black;
+                        }
+                    }
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: #333;
+        padding: 50px 0;
+
+        .responsive-footer {
+            display: flex;
+            justify-content: space-between;
+
+            flex-wrap: wrap;
+
+            .social-networks {
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                nav {
+                    ul.social-list {
+                        display: flex;
+
+                        li {
+                            padding-right: 10px;
+
+                            a {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: white;
+                                color: black;
+                                transition: all 0.2s linear;
+                            }
+
+                            a:hover {
+                                background-color: black;
+                                color: white;
+                                transform: scale(1.2);
+                                box-shadow: 0 0 20px 2px white;
+                            }
+                        }
+                    }
+                }
+
+                p {
+                    text-align: center;
+                    color: white;
+                    padding: 25px 0;
+                }
+            }
+
+            ul.menu-list {
+                padding: 25px;
+                h1 {
+                    color: white;
+                    margin-bottom: 20px;
+                }
+                li {
+                    margin: 10px 0;
+                    a {
+                        color: rgba(255, 255, 255, 0.623);
+                        font-size: 20px;
+                        transition: all 0.2s linear;
+                        display: flex;
+                        padding: 5px 15px;
+                        border-bottom: 3px solid transparent;
+                    }
+                    a:hover {
+                        color: yellow;
+                        border-color: white;
+                        transform: scale(1.4);
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        .networks {
+            flex-direction: column;
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+        section {
+            .menu-and-logo {
+                
+                .nav-brand {
+                    margin-left: 10px !important;
+                }
+                div#bar-logo {
+                    display: block !important;
+                    margin-right: 10px;
+
+                    a {
+                        font-size: 50px;
+                        color: navy;
+                    }
+                }
+                .menu-list {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    section#motorcycles,
+    section#drivers {
+        .boxes {
+            justify-content: center !important;
+        }
+    }
+
+    footer {
+        .social-networks,
+        ul.menu-list {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    section#motorcycles,
+    section#drivers {
+        .boxes {
+            justify-content: center !important;
+        }
+    }
+
+    footer {
+        .social-networks,
+        ul.menu-list {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    section#motorcycles,
+    section#drivers {
+        .boxes {
+            justify-content: space-around !important;
+
+            .box {
+                // width: 250px !important;
+                margin: 50px 0;
+            }
+        }
+    }
+
+    footer {
+        .social-networks
+        // ul.menu-list
+        {
+            width: 100%;
+            align-items: center !important;
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+
+    section#motorcycles {
+        .box {
+            width: 300px;
+        }
+    }
+}
